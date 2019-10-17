@@ -48,7 +48,6 @@ body{
 }
 
 .user-input{
-	color: var(--color-secondary);
 	text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -107,6 +106,7 @@ body{
 }
 
 .display-city{
+	color: var(--color-secondary);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
