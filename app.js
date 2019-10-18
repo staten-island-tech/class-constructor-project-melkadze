@@ -1,15 +1,4 @@
-
-
-/*
-const Winny = new Person(17,"Winny")
-console.log(Winny.calculateBirthYear())
-*/
-
-
-
-
-
-//one class to create the object: person, album, movie, etc. ***Model
+//model city class
 class City {
     constructor(name, realName, population, area, founded){
         this.name = name;
@@ -25,12 +14,7 @@ class City {
 
 
 
-
-//****View */ class for the UI with methods
-//creates/inserts the html for UI display
-//clear fields method
-//remove something/object
-
+//UI section: displaying & removing cities, and clearing fields
 class UI {
 
     removeCity(e) {
@@ -41,7 +25,6 @@ class UI {
     
     clearValues() {
         document.getElementById("city-form").reset();
-        console.log(document.getElementById("city-form"));
     }
 
     displayCity(e){
@@ -71,34 +54,13 @@ class UI {
 }
 
 
+
 //**Controller */ combines UI and model
-//event handler with function
-//get values
-
-//instantiate new class/object/album with variable name
-
 //instantiate new UI
 //const ui = new UI()
-
 //call relevant methods
 
-//seperate event handler for removing/deleting
-//Ui is 3 methods
-//put html on screen
-//add album
-//clear fields
-//delete album
 
-
-
-///evemt listener
-
-//instamnciate new album
-
-//const ui thinkg
-//ui add album to list
-
-//ui clear fields; prevent default
 
 //CONTROLLER:
 form = document.querySelector('#city-form');
@@ -127,14 +89,13 @@ form.addEventListener('submit', function(e){
 
 class Controller {
 
-    addCity(name, realName, population, area, founded){
+    /*addCity(name, realName, population, area, founded){
         cities.push(new City(name, realName, population, area, founded));
-    }
+    }*/
 
     eventListeners(){
         form.addEventListener('submit', ui.displayCity);
         document.querySelector('.display').addEventListener('click', ui.removeCity);
-        console.log('n');
     }
     
 }
@@ -146,6 +107,17 @@ const controller = new Controller();
 controller.eventListeners();
 
 ui.clearValues();
+
+
+
+
+
+
+
+
+
+//all comments past this point:
+
 
 
 
